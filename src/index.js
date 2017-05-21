@@ -5,10 +5,10 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom'
 import { pathToJS } from 'react-redux-firebase'
 import './index.css';
-
-const store = configureStore()
 import App from './App/AppContainer'
 import Profile from './User/ProfileContainer'
+
+const store = configureStore()
 
 function PrivateRoute ({component: Component, ...rest}) {
   const auth = pathToJS(store.getState().firebase, 'auth')

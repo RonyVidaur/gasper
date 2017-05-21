@@ -1,6 +1,6 @@
 import React from 'react'
 import { firebaseConnect } from 'react-redux-firebase'
-import { pathToJS, dataToJS } from 'react-redux-firebase'
+import { pathToJS /*,dataToJs*/ } from 'react-redux-firebase'
 import { connect } from 'react-redux'
 
 import AppComponent from './AppComponent'
@@ -35,4 +35,4 @@ export default connect(({firebase}) => {
   return {
     auth: pathToJS(firebase, 'auth')
   }
-}, null)(wrappedApp) 
+}, null)(wrappedApp)

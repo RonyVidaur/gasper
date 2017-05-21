@@ -11,15 +11,16 @@ const AppComponent = ({authed, login, logout}) => {
 
   return(
     <div className="App">
-      <div className="App-header">
-        <img src={logo} alt="logo" className="App-logo"/>
-        <h2>Gasper</h2>
-      </div>
       <div className="nav">
         <Link to="/">Games</Link>
         {profileLink}
         {authButtons}
       </div>
+      <div className="App-header">
+        <img src={logo} alt="logo" className="App-logo"/>
+        <h2>Gasper</h2>
+      </div>
+
     </div>
   )
 }

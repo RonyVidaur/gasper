@@ -1,17 +1,42 @@
+@font-face {
+  font-family: HammersmithOne;
+  src: url(./assets/fonts/HammersmithOne.ttf);
+}
+
+@font-face {
+  font-family: FredokaOne;
+  src: url(./assets/fonts/FredokaOne.ttf);
+}
+
 .App {
+  background:
+      linear-gradient(45deg, hsla(175, 45%, 21%, 1) 0%, hsla(175, 45%, 21%, 0) 70%),
+      linear-gradient(315deg, hsla(179, 47%, 49%, 1) 10%, hsla(179, 47%, 49%, 0) 80%),
+      linear-gradient(225deg, hsla(162, 96%, 49%, 1) 10%, hsla(162, 96%, 49%, 0) 80%),
+      linear-gradient(135deg, hsla(158, 100%, 50%, 1) 100%, hsla(158, 100%, 50%, 0) 70%);
+    background:
+      linear-gradient(45deg, hsla(175, 45%, 21%, 1) 0%, hsla(175, 45%, 21%, 0) 70%),
+      linear-gradient(135deg, hsla(179, 47%, 49%, 1) 10%, hsla(179, 47%, 49%, 0) 80%),
+      linear-gradient(225deg, hsla(162, 96%, 49%, 1) 10%, hsla(162, 96%, 49%, 0) 80%),
+      linear-gradient(315deg, hsla(158, 100%, 50%, 1) 100%, hsla(158, 100%, 50%, 0) 70%);
+
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /*animation: App-logo-spin infinite 20s linear;*/
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+
+  height: 350px;
   padding: 20px;
   color: white;
+  font-family: 'FredokaOne';
+  font-size: 25px;
+
 }
 
 .App-intro {
@@ -25,23 +50,35 @@
 
 .nav {
   padding: 10px;
-  width: 100%;
-  text-align: center;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  text-align: right;
+  box-shadow: 60px 2px 1px 1px teal;
+  z-index: 1;
+  top: 0;
+  color: white;
+  
 }
-
+.nav a {
+  font-family: 'HammersmithOne';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+}
 .nav a:link {
   padding: 20px;
-  color: #c00;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav a:visited {
-  color: #c00;
+  color: white;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 75px;
 }

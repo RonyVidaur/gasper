@@ -4,9 +4,7 @@ import rootReducer from './rootReducer'
 import rootSaga from './rootSaga'
 import { reactReduxFirebase } from 'react-redux-firebase'
 
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
 
 //firebase configuration
 const config = {
@@ -28,7 +26,8 @@ const configureStore = () => {
         profileFactory: (userData) => {
           return {
             name: userData.displayName,
-            points: 0
+            points: 0,
+            pic: userData.photoURL
           }
         }
       })))
